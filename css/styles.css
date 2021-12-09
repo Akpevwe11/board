@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #F69C7E;
+}
+
+#item {
+ position: absolute;
+ z-index: 9;
+ background-color: #f1f1f1;
+ border: 1px solid #d3d3d3;
+ text-align: center;
+}
+
+#itemheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}
+
+header, footer {
+  background-color: #F05A28;
+  height: 60px;
+  justify-content: center;
+  color: white;
+}
+
+header h1 {
+  font-size: 36px;
+  padding-top: 10px;
+}
+
+footer span {
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-one {
+  flex: 1;
+}
+
+.list {
+  width: 250px;
+  border: 1px solid #F69C7E;
+  margin: 20px;
+  border-radius: 10px;
+  color: #F69C7E;
+}
+
+.list .title {
+  margin: 5px 10px;
+  padding: 5px;
+}
+
+.list .item {
+  padding: 5px;
+  border-bottom: 1px solid #F69C7E;
+}
+
+.list input, button {
+  color: #F69C7E;
+  margin-left: 5px;
+}
+
+.list button {
+  padding: 2px;
+}
+
+.heading {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #F69C7E;
+}
+
+.heading .title {
+  width: 200px;
+}
+
+.heading .add {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+}
+
+#board {
+  margin-top: 20px;
+  padding-left: 10px; 
+
+  display: flex;
+}
+
+#add-task-form #add-task {
+  height: 30px;
+  width: 30px;
+  border-radius: 4px;
+  background-color: rgb(223, 223, 223);
+ 
+  
+}
+
+#add-task-form #task-value {
+  padding-left: 16px;
+  margin-top: 1px;
+  height: 40px;
+  width: 200px;
+  border-radius: 0px;
+  margin-right: 8px;
+  font-family: 'Lato';
+  font-size: 16px;
+  line-height: 19px;
+  border: none;
+}
+
+.task {
+  list-style-type: none;
+  margin: 16px 0px 0px 24px;
+  padding: 10px 8px 10px 10px;
+  position: relative;
+  background-color: white;
+  border: 1px solid #EBEDF0;
+  box-sizing: border-box;
+  border-radius: 2px;
+  min-height: 80px;
+  width: 200px;
+}
+.task:nth-child(1) {
+  margin-top: 32px;
+}
+.task .task-content {
+  margin: 16px 16px 0 16px;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #54585A;
+}
+
+.task .trash {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-family: 'Lato';
+  color: #54585A;
+}
+
+.task .trash:hover {
+  color: #c42d1c;
+}
+
+.task .task-content {
+  margin: 16px 16px 0 16px;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #54585A;
+}
+.task:hover {
+  background: #FFFFFF;
+  border: 1px solid #4786FF;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 4px #4786FF;
+  border-radius: 2px;
+}
+.hold:active:hover {
+  border: solid 3px blue;
+}
+.hovered {
+  border-style: dashed;
+}
